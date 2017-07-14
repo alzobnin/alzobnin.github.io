@@ -1,5 +1,190 @@
 <html>
+<head>
+<title>Principal components of different word embedding models</title>
+</head>
 <body>
- Hello, world!
+<h3>Principal components of different publicly available word embedding models</h3>
+<ul>
+<li><a href="https://github.com/facebookresearch/fastText/blob/master/pretrained-vectors.md">fastText</a>
+ <ul>
+  <li>English Wikipedia
+   <ul>
+    <li><a href="fasttext/en/norm.svd.top10.head10K.html">10K most frequent words, t=10</a></li>
+    <li><a href="fasttext/en/norm.svd.top50.head10K.html">10K most frequent words, t=50</a></li>
+    <li><a href="fasttext/en/norm.svd.top15.head100K.html">100K most frequent words, t=15</a></li>
+   </ul>
+  </li>
+  <li>French Wikipedia
+   <ul>
+    <li><a href="fasttext/fr/norm.svd.top10.head10K.html">10K most frequent words, t=10</a></li>
+    <li><a href="fasttext/fr/norm.svd.top50.head10K.html">10K most frequent words, t=50</a></li>
+    <li><a href="fasttext/fr/norm.svd.top15.head100K.html">100K most frequent words, t=15</a></li>
+   </ul>
+  </li>
+  <li>Russian Wikipedia
+   <ul>
+    <li><a href="fasttext/ru/norm.svd.top15.head10K.html">10K most frequent words, t=15</a></li>
+    <li><a href="fasttext/ru/norm.svd.top15.head100K.html">100K most frequent words, t=15</a></li>
+   </ul>
+  </li>
+  <li>Hindi Wikipedia
+   <ul>
+    <li><a href="fasttext/hi/norm.svd.head10K.top30.html">10K most frequent words, t=30</a></li>
+    <li><a href="fasttext/hi/norm.svd.full.top30.html">all words (150K), t=30</a></li>
+   </ul>
+  </li>
+ </ul>
+ <br/>
+</li>
+<li><a href="https://sites.google.com/site/rmyeid/projects/polyglot">polyglot</a>
+ <ul>
+  <li>English Wikipedia
+   <ul>
+    <li><a href="polyglot/en/norm.svd.top10.head10K.html">10K most frequent words, t=10</a></li>
+    <li><a href="polyglot/en/norm.svd.top50.head10K.html">10K most frequent words, t=50</a></li>
+    <li><a href="polyglot/en/norm.svd.top15.head100K.html">100K most frequent words, t=15</a></li>
+   </ul>
+  </li>
+  <li>French Wikipedia
+   <ul>
+    <li><a href="polyglot/fr/norm.svd.top10.head10K.html">10K most frequent words, t=10</a></li>
+    <li><a href="polyglot/fr/norm.svd.top50.head10K.html">10K most frequent words, t=50</a></li>
+    <li><a href="polyglot/fr/norm.svd.top15.head100K.html">100K most frequent words, t=15</a></li>
+   </ul>
+  </li>
+ </ul>
+ <br/>
+</li>
+<li><a href="https://code.google.com/archive/p/word2vec/">word2vec<a/>
+ <ul>
+  <li>Google News
+   <ul>
+    <li><a href="word2vec/google_news/norm.svd.top10.head10K.html">10K most frequent words, t=10</a></li>
+    <li><a href="word2vec/google_news/norm.svd.top50.head10K.html">10K most frequent words, t=50</a></li>
+    <li><a href="word2vec/google_news/norm.svd.top15.head100K.html">100K most frequent words, t=15</a></li>
+   </ul>
+  </li>
+  <li>Freebase
+   <ul>
+    <li><a href="word2vec/google_freebase/norm.center.svd.top50.head10K.html">10K most frequent words, t=50</a></li>
+    <li><a href="word2vec/google_freebase/norm.center.svd.top50.head100K.html">100K most frequent words, t=50</a></li>
+   </ul>
+  </li>
+ </ul>
+ <br/>
+</li>
+<li><a href="https://nlp.stanford.edu/projects/glove/">GloVe</a>
+ <ul>
+  <li>Common Crawl, 42B tokens
+   <ul>
+    <li><a href="glove/42B.300d/norm.svd.top10.head10K.html">10K most frequent words, t=10</a></li>
+    <li><a href="glove/42B.300d/norm.svd.top15.head100K.html">100K most frequent words, t=15</a></li>
+   </ul>
+  </li>
+  <li>Twitter, 200d
+   <ul>
+    <li><a href="glove/twitter.200d/norm.svd.top15.head10K.html">10K most frequent words, t=15</a></li>
+    <li><a href="glove/twitter.200d/norm.svd.top15.head100K.html">100K most frequent words, t=15</a></li>
+   </ul>
+  </li>
+ </ul>
+ <br/>
+</li>
+<li><a href="https://levyomer.wordpress.com/2014/04/25/dependency-based-word-embeddings/">Depedency-based word embeddings</a>
+ <ul>
+  <li>words
+   <ul>
+    <li><a href="dependency_based/norm.svd.top10.head10K.html">10K most frequent words, t=10</a></li>
+    <li><a href="dependency_based/norm.svd.top15.head100K.html">100K most frequent words, t=15</a></li>
+   </ul>
+  </li>
+ </ul>
+</li>
+<br/>
+<li><a href="http://rusvectores.org/">RusVect&#x014D;r&#x0113;s</a>
+ <ul>
+  <li><a href="http://rusvectores.org/ru/models/">Russian</a>
+   <ul>
+    <li>ruscorpora
+     <ul>
+      <li><a href="rusvectores/ru/ruscorpora/norm.svd.ndim50.head10000.top15.html">10K most frequent words, t=15</a></li>
+      <li><a href="rusvectores/ru/ruscorpora/norm.svd.ndim50.head100000.top15.html">100K most frequent words, t=15</a></li>
+     </ul>
+    </li>
+    <li>ruscorpora_2015
+     <ul>
+      <li><a href="rusvectores/ru/ruscorpora_2015/norm.svd.ndim50.head10000.top15.html">10K most frequent words, t=15</a></li>
+      <li><a href="rusvectores/ru/ruscorpora_2015/norm.svd.ndim50.head100000.top15.html">100K most frequent words, t=15</a></li>
+     </ul>
+    </li>
+    <li>ruwikiruscorpora
+     <ul>
+      <li><a href="rusvectores/ru/ruwikiruscorpora/norm.svd.ndim50.head10000.top15.html">10K most frequent words, t=15</a></li>
+      <li><a href="rusvectores/ru/ruwikiruscorpora/norm.svd.ndim50.head100000.top15.html">100K most frequent words, t=15</a></li>
+     </ul>
+    </li>
+    <li>ruwikiruscorpora_2015
+     <ul>
+      <li><a href="rusvectores/ru/ruwikiruscorpora_2015/norm.svd.ndim50.head10000.top15.html">10K most frequent words, t=15</a></li>
+      <li><a href="rusvectores/ru/ruwikiruscorpora_2015/norm.svd.ndim50.head100000.top15.html">100K most frequent words, t=15</a></li>
+     </ul>
+    </li>
+    <li>web
+     <ul>
+      <li><a href="rusvectores/ru/web/norm.svd.ndim50.head10000.top15.html">10K most frequent words, t=15</a></li>
+      <li><a href="rusvectores/ru/web/norm.svd.ndim50.head100000.top15.html">100K most frequent words, t=15</a></li>
+     </ul>
+    </li>
+    <li>web_2015
+     <ul>
+      <li><a href="rusvectores/ru/web_2015/norm.svd.ndim50.head10000.top15.html">10K most frequent words, t=15</a></li>
+      <li><a href="rusvectores/ru/web_2015/norm.svd.ndim50.head100000.top15.html">100K most frequent words, t=15</a></li>
+     </ul>
+    </li>
+    <li>news
+     <ul>
+      <li><a href="rusvectores/ru/news/norm.svd.ndim50.head10000.top15.html">10K most frequent words, t=15</a></li>
+      <li><a href="rusvectores/ru/news/norm.svd.ndim50.head100000.top15.html">100K most frequent words, t=15</a></li>
+     </ul>
+    </li>
+    <li>news_2015
+     <ul>
+      <li><a href="rusvectores/ru/news_2015/norm.svd.ndim50.head10000.top15.html">10K most frequent words, t=15</a></li>
+      <li><a href="rusvectores/ru/news_2015/norm.svd.ndim50.head100000.top15.html">100K most frequent words, t=15</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><a href="http://vectors.nlpl.eu/explore/embeddings/en/models/">English</a>
+   <ul>
+    <li>British National Corpus
+     <ul>
+      <li><a href="rusvectores/en/bnc/norm.svd.ndim50.head10000.top15.html">10K most frequent words, t=15</a></li>
+      <li><a href="rusvectores/en/bnc/norm.svd.ndim50.head100000.top15.html">100K most frequent words, t=15</a></li>
+     </ul>
+    </li>
+    <li>English Wikipedia
+     <ul>
+      <li><a href="rusvectores/en/enwiki/norm.svd.ndim50.head10000.top15.html">10K most frequent words, t=15</a></li>
+      <li><a href="rusvectores/en/enwiki/norm.svd.ndim50.head100000.top15.html">100K most frequent words, t=15</a></li>
+     </ul>
+    </li>
+    <li>English Gigaword
+     <ul>
+      <li><a href="rusvectores/en/gigaword/norm.svd.ndim50.head10000.top15.html">10K most frequent words, t=15</a></li>
+      <li><a href="rusvectores/en/gigaword/norm.svd.ndim50.head100000.top15.html">100K most frequent words, t=15</a></li>
+     </ul>
+    </li>
+    <li>Google News corpus
+     <ul>
+      <li><a href="rusvectores/en/googlenews/norm.svd.ndim50.head10000.top15.html">10K most frequent words, t=15</a></li>
+      <li><a href="rusvectores/en/googlenews/norm.svd.ndim50.head100000.top15.html">100K most frequent words, t=15</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+ </ul>
+</li>
+</ul>
 </body>
 </html>
